@@ -1,4 +1,4 @@
-import Calculation from './index'
+import { Calculation } from './index'
 describe('class: Caluculation', () => {
     const calc = new Calculation()
     const a = 10
