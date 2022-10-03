@@ -8,7 +8,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, "/dist"),
         filename: "bundle.js",
-        library: 'CalculationBundle',
+        library: 'Leetcode',
     },
     resolve: {
         extensions: [".tsx", ".ts", ".js", ".json"]

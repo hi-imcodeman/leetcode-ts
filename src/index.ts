@@ -1,11 +1,3 @@
-import { EventEmitter } from 'events'
-export default class Calculation extends EventEmitter {
-    add(a: number, b: number): number {
-        this.emit('done', 'addition')
-        return a + b
-    }
-    subtrct(a: number, b: number): number {
-        this.emit('done', 'subtraction')
-        return a - b
-    }
-}
+export * from './1.two-sum'
+export * from './344.reverse-string'
+export * from './541.reverse-string-ii'
