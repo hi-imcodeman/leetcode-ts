@@ -1,2 +1,1 @@
-export { Calculation } from './Calculation'
-export { twoSum } from './algorithms/1.TwoSum'
+export * from './1.two-sum'

@@ -5,16 +5,14 @@
  */
 
 // @lc code=start
-function twoSum(nums: number[], target: number): number[] {
+export function twoSum(nums: number[], target: number): number[] {
     for (let i = 0; i < nums.length; i++) {
-        const num = nums[i];
-        const diff = target - num;
-        const offsetIndex = nums.indexOf(diff, i + 1);
-        if (offsetIndex > i) {
-            return [i, offsetIndex]
+        for (let j = i + 1; j < nums.length; j++) {
+            const sum = nums[i] + nums[j]
+            if (sum === target)
+                return [i, j]
         }
     }
     return []
 }
 // @lc code=end
-
