@@ -21,3 +21,4 @@ function reverseString(s: string[]): void {
 }
 // @lc code=end
 
+export { reverseString }

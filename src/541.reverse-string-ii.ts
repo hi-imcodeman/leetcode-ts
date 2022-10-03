@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-function reverseString(s: string[], start: number, end: number): string[] {
+function reverseStringPos(s: string[], start: number, end: number): string[] {
     let i = start
     let j = end
     while (i < j) {
@@ -22,9 +22,10 @@ function reverseStr(s: string, k: number): string {
     const len=strArray.length
     const step = 2 * k
     for(let i=0;i<len-1;i=i+step){
-        strArray=reverseString(strArray,i,i+(k-1))
+        strArray=reverseStringPos(strArray,i,i+(k-1))
     }
     return strArray.join("")
 }
 // @lc code=end
 
+export { reverseStr }
