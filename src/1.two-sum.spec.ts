@@ -12,4 +12,8 @@ describe('Two Sum',()=>{
         const result=twoSum([2,7,11,15],22)
         expect(result).toEqual([1,3])
     })
+    test('Case 3',()=>{
+        const result=twoSum([2,7,11,15],23)
+        expect(result).toEqual([])
+    })
 })

@@ -25,8 +25,8 @@ function reverseList(head: ListNode | null): ListNode | null {
 export function reverseList2(head: ListNode | null): ListNode | null {
     if(!head)
         return head
-    let revLL:ListNode|null = new ListNode(head?.val)
-    while(head?.next){
+    let revLL:ListNode|null = new ListNode(head.val)
+    while(head.next){
         head=head.next
         revLL = new ListNode(head.val,revLL) 
     } 
