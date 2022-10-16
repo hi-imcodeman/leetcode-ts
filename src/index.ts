@@ -1,4 +1,7 @@
+export * from './utils'
+
 export * from './1.two-sum'
+export * from './8.string-to-integer-atoi'
 export * from './13.roman-to-integer'
 export * from './136.single-number'
 export * from './206.reverse-linked-list'
