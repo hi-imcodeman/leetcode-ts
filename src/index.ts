@@ -1,4 +1,7 @@
 export * from './1.two-sum'
+export * from './13.roman-to-integer'
+export * from './136.single-number'
 export * from './206.reverse-linked-list'
+export * from './283.move-zeroes'
 export * from './344.reverse-string'
 export * from './541.reverse-string-ii'
