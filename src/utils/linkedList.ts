@@ -9,7 +9,7 @@ export class ListNode {
     }
 }
 
-export const arrayToLinkedList = (nums:number[]) => {
+export const arrayToLinkedList = (nums:number[]):ListNode | null => {
     if(!nums.length)
         return null
     const listNode:ListNode = new ListNode(nums[0])
@@ -24,7 +24,7 @@ export const arrayToLinkedList = (nums:number[]) => {
         return listNode
 }
 
-export const linkedListToArray = (listNode:ListNode|null) => {
+export const linkedListToArray = (listNode:ListNode|null):number[] => {
     if(!listNode)
         return []
     const data:number[]=[]
