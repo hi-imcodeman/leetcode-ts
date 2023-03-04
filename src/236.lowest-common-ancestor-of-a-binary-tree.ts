@@ -62,13 +62,7 @@
 import { TreeNode } from "./utils";
 
 // @lc code=start
-function lowestCommonAncestor(root: TreeNode | null, p: TreeNode | null, q: TreeNode | null): TreeNode | null {
-    // console.log({
-    //     root,
-    //     p,
-    //     q
-    // });
-    
+function lowestCommonAncestor(root: TreeNode | null, p: TreeNode | null, q: TreeNode | null): TreeNode | null {    
     if (root === null || root.val === p?.val || root.val === q?.val) {
         return root
     }
