@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`236. Lowest common Ancestor of a binary tree Case 1 1`] = `
+TreeNode {
+  "left": TreeNode {
+    "left": TreeNode {
+      "left": TreeNode {
+        "left": null,
+        "right": null,
+        "val": null,
+      },
+      "right": TreeNode {
+        "left": null,
+        "right": null,
+        "val": null,
+      },
+      "val": 6,
+    },
+    "right": TreeNode {
+      "left": TreeNode {
+        "left": null,
+        "right": null,
+        "val": 7,
+      },
+      "right": TreeNode {
+        "left": null,
+        "right": null,
+        "val": 4,
+      },
+      "val": 2,
+    },
+    "val": 5,
+  },
+  "right": TreeNode {
+    "left": TreeNode {
+      "left": null,
+      "right": null,
+      "val": 0,
+    },
+    "right": TreeNode {
+      "left": null,
+      "right": null,
+      "val": 8,
+    },
+    "val": 1,
+  },
+  "val": 3,
+}
+`;
