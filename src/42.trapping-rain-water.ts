@@ -75,63 +75,63 @@ function trap(height: number[]): number {
 // @lc code=end
 
 // My initial try
-function trap1(height: number[]): number {
-    let acc = 0
-    const { length } = height
-    if (length > 1) {
-        let left = 0
-        let curr = 1
-        let right = 1
-        let positions = []
-        while (curr < length) {
-            if (height[curr] < height[left]) {
-                positions.push(curr)
-                if (height[curr] >= height[curr - 1]) {
-                    right = curr
-                }
-                curr++
-            } else {
-                positions.forEach(position => {
-                    acc += (height[left] - height[position])
-                })
-                positions = []
-                left = curr
-                curr++
-            }
-        }
-        if (positions.length) {
-            positions.forEach(position => {
-                if (position <= right && height[position] < height[right])
-                    acc += (height[right] - height[position])
-            })
-        }
-    }
-    return acc
-}
+// function trap1(height: number[]): number {
+//     let acc = 0
+//     const { length } = height
+//     if (length > 1) {
+//         let left = 0
+//         let curr = 1
+//         let right = 1
+//         let positions = []
+//         while (curr < length) {
+//             if (height[curr] < height[left]) {
+//                 positions.push(curr)
+//                 if (height[curr] >= height[curr - 1]) {
+//                     right = curr
+//                 }
+//                 curr++
+//             } else {
+//                 positions.forEach(position => {
+//                     acc += (height[left] - height[position])
+//                 })
+//                 positions = []
+//                 left = curr
+//                 curr++
+//             }
+//         }
+//         if (positions.length) {
+//             positions.forEach(position => {
+//                 if (position <= right && height[position] < height[right])
+//                     acc += (height[right] - height[position])
+//             })
+//         }
+//     }
+//     return acc
+// }
 
-function trap2(height: number[]): number {
-    let water = 0;
-    const size = height.length;
-    let leftMax = height[0];
-    let rightMax = height[size -1];
-    const leftArr = new Array(size);
-    leftArr[0] = height[0];
-    const rightArr = new Array(size);
-    rightArr[size-1] = height[size -1];
-    for(let i=1;i<height.length;i++){
-        leftMax = Math.max(leftMax, height[i]);
-        leftArr[i] = leftMax;
-    }
-    for(let k=height.length -2;k>=0;k--){
-        rightMax = Math.max(rightMax, height[k]);
-        rightArr[k] = rightMax;
-    }
+// function trap2(height: number[]): number {
+//     let water = 0;
+//     const size = height.length;
+//     let leftMax = height[0];
+//     let rightMax = height[size -1];
+//     const leftArr = new Array(size);
+//     leftArr[0] = height[0];
+//     const rightArr = new Array(size);
+//     rightArr[size-1] = height[size -1];
+//     for(let i=1;i<height.length;i++){
+//         leftMax = Math.max(leftMax, height[i]);
+//         leftArr[i] = leftMax;
+//     }
+//     for(let k=height.length -2;k>=0;k--){
+//         rightMax = Math.max(rightMax, height[k]);
+//         rightArr[k] = rightMax;
+//     }
     
-    for(let j=0;j<height.length;j++){
-        water = water + (Math.min(leftArr[j], rightArr[j]) - height[j]);
-    }
-    return water;
-}
+//     for(let j=0;j<height.length;j++){
+//         water = water + (Math.min(leftArr[j], rightArr[j]) - height[j]);
+//     }
+//     return water;
+// }
 
-export { trap, trap1, trap2 }
+export { trap }
 
