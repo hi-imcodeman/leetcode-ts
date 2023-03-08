@@ -4,16 +4,8 @@ exports[`236. Lowest common Ancestor of a binary tree Case 1 1`] = `
 TreeNode {
   "left": TreeNode {
     "left": TreeNode {
-      "left": TreeNode {
-        "left": null,
-        "right": null,
-        "val": null,
-      },
-      "right": TreeNode {
-        "left": null,
-        "right": null,
-        "val": null,
-      },
+      "left": null,
+      "right": null,
       "val": 6,
     },
     "right": TreeNode {

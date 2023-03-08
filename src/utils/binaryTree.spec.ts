@@ -1,4 +1,11 @@
-import { insertLevelOrder, inOrder,preOrder,postOrder, levelOrder } from './binaryTree'
+import {
+    insertLevelOrder,
+    inOrder,
+    preOrder,
+    postOrder,
+    levelOrder,
+    getAsciiTree
+} from './binaryTree'
 
 describe('Binary Tree Utils', () => {
     test('insertLevelOrder', () => {
@@ -26,13 +33,13 @@ describe('Binary Tree Utils', () => {
         expect(levelOrderArr).toMatchSnapshot()
     })
     test('LevelOrder Insert and Traversal with null', () => {
-        const bt = insertLevelOrder([1,null,2,null,null,3])
+        const bt = insertLevelOrder([1, null, 2, null, null, 3])
         expect(bt).toMatchSnapshot('BT')
         const levelOrderArr = levelOrder(bt)
         expect(levelOrderArr).toMatchSnapshot('levelOrderArr')
     })
     test('Traversals with string', () => {
-        const bt = insertLevelOrder(['a','b','c',null,'e','f'])
+        const bt = insertLevelOrder(['a', 'b', 'c', null, 'e', 'f'])
         expect(bt).toMatchSnapshot('BT')
         const inOrderArr = inOrder(bt)
         const preOrderArr = preOrder(bt)
@@ -40,5 +47,9 @@ describe('Binary Tree Utils', () => {
         expect(inOrderArr).toMatchSnapshot('inOrder')
         expect(preOrderArr).toMatchSnapshot('preOrder')
         expect(postOrderArr).toMatchSnapshot('postOrder')
+    })
+    test('Get ASCII Tree', () => {
+        const asciiTree= getAsciiTree([3,5,1,6,2,0,8,null,null,7,4])
+        expect(asciiTree).toMatchSnapshot()
     })
 })

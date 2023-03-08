@@ -1,5 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Binary Tree Utils Get ASCII Tree 1`] = `
+"          ______3______ 
+         /             \\\\
+      __5__           __1__ 
+     /     \\\\         /     \\\\
+    6       2       0       8 
+           / \\\\                
+          7   4                 "
+`;
+
 exports[`Binary Tree Utils InOrder Traversal 1`] = `
 Array [
   6,
@@ -16,19 +26,7 @@ Array [
 
 exports[`Binary Tree Utils LevelOrder Insert and Traversal with null: BT 1`] = `
 TreeNode {
-  "left": TreeNode {
-    "left": TreeNode {
-      "left": null,
-      "right": null,
-      "val": null,
-    },
-    "right": TreeNode {
-      "left": null,
-      "right": null,
-      "val": null,
-    },
-    "val": null,
-  },
+  "left": null,
   "right": TreeNode {
     "left": TreeNode {
       "left": null,
@@ -48,12 +46,9 @@ Array [
     1,
   ],
   Array [
-    null,
     2,
   ],
   Array [
-    null,
-    null,
     3,
   ],
 ]
@@ -112,11 +107,7 @@ Array [
 exports[`Binary Tree Utils Traversals with string: BT 1`] = `
 TreeNode {
   "left": TreeNode {
-    "left": TreeNode {
-      "left": null,
-      "right": null,
-      "val": null,
-    },
+    "left": null,
     "right": TreeNode {
       "left": null,
       "right": null,
@@ -139,7 +130,6 @@ TreeNode {
 
 exports[`Binary Tree Utils Traversals with string: inOrder 1`] = `
 Array [
-  null,
   "b",
   "e",
   "a",
@@ -150,7 +140,6 @@ Array [
 
 exports[`Binary Tree Utils Traversals with string: postOrder 1`] = `
 Array [
-  null,
   "e",
   "b",
   "f",
@@ -163,7 +152,6 @@ exports[`Binary Tree Utils Traversals with string: preOrder 1`] = `
 Array [
   "a",
   "b",
-  null,
   "e",
   "c",
   "f",

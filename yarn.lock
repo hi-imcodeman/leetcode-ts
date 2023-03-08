@@ -1020,6 +1020,11 @@ array-unique@^0.3.2:
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
   integrity sha1-qJS3XUvE9s1nnvMkSp/Y9Gri1Cg=
 
+ascii-binary-tree@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/ascii-binary-tree/-/ascii-binary-tree-0.0.1.tgz#a3b4d663aafc8eeecc182ccf7f18fa0785ae1b77"
+  integrity sha512-ck7I3o4igajty8LUB4DNQ3sF8k7boDZG3Sc8s4/Fh709EA1f3aSwKIEDZXE4Cc7kH8TRm+aUHEBKqTS1+yboIw==
+
 asn1@~0.2.3:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/asn1/-/asn1-0.2.4.tgz#8d2475dfab553bb33e77b54e59e880bb8ce23136"
