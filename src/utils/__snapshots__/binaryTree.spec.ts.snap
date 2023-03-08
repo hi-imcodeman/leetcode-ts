@@ -84,13 +84,13 @@ Array [
 exports[`Binary Tree Utils PostOrder Traversal 1`] = `
 Array [
   6,
-  4,
   6,
-  2,
+  4,
   5,
+  2,
+  6,
   6,
   3,
-  6,
   1,
 ]
 `;
@@ -98,14 +98,75 @@ Array [
 exports[`Binary Tree Utils PreOrder Traversal 1`] = `
 Array [
   1,
-  6,
+  2,
   4,
   6,
-  2,
-  5,
   6,
+  5,
   3,
   6,
+  6,
+]
+`;
+
+exports[`Binary Tree Utils Traversals with string: BT 1`] = `
+TreeNode {
+  "left": TreeNode {
+    "left": TreeNode {
+      "left": null,
+      "right": null,
+      "val": null,
+    },
+    "right": TreeNode {
+      "left": null,
+      "right": null,
+      "val": "e",
+    },
+    "val": "b",
+  },
+  "right": TreeNode {
+    "left": TreeNode {
+      "left": null,
+      "right": null,
+      "val": "f",
+    },
+    "right": null,
+    "val": "c",
+  },
+  "val": "a",
+}
+`;
+
+exports[`Binary Tree Utils Traversals with string: inOrder 1`] = `
+Array [
+  null,
+  "b",
+  "e",
+  "a",
+  "f",
+  "c",
+]
+`;
+
+exports[`Binary Tree Utils Traversals with string: postOrder 1`] = `
+Array [
+  null,
+  "e",
+  "b",
+  "f",
+  "c",
+  "a",
+]
+`;
+
+exports[`Binary Tree Utils Traversals with string: preOrder 1`] = `
+Array [
+  "a",
+  "b",
+  null,
+  "e",
+  "c",
+  "f",
 ]
 `;
 
