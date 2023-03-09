@@ -46,10 +46,16 @@ Array [
     1,
   ],
   Array [
+    null,
     2,
   ],
   Array [
     3,
+    null,
+  ],
+  Array [
+    null,
+    null,
   ],
 ]
 `;
@@ -72,6 +78,18 @@ Array [
   Array [
     6,
     6,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+  ],
+  Array [
+    null,
+    null,
+    null,
+    null,
   ],
 ]
 `;

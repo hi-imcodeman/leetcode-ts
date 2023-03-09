@@ -72,6 +72,11 @@ export function levelOrder<T>(root:TreeNode<T>|null,arr:Array<(T|null)[]>=[],lev
         arr[level].push(root.val)
         levelOrder(root.left,arr,level+1)
         levelOrder(root.right,arr,level+1)
+    }else{
+        if(!arr[level]){
+            arr[level]=[]
+        }
+        arr[level].push(null)
     }
     return arr
 }

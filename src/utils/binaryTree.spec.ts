@@ -6,6 +6,8 @@ import {
     levelOrder,
     getAsciiTree
 } from './binaryTree'
+import {flatten} from 'lodash'
+
 
 describe('Binary Tree Utils', () => {
     test('insertLevelOrder', () => {
@@ -51,5 +53,15 @@ describe('Binary Tree Utils', () => {
     test('Get ASCII Tree', () => {
         const asciiTree= getAsciiTree([3,5,1,6,2,0,8,null,null,7,4])
         expect(asciiTree).toMatchSnapshot()
+    })
+
+    test('Construct ASCII tree from BT', () => {
+        const treeVals = [3,5,1,6,2,0,8,null,null,7,4]
+        const asciiTreeFromArr= getAsciiTree(treeVals)
+        const bt= insertLevelOrder(treeVals)
+        const arr=levelOrder(bt)
+        // arr.pop()
+        const asciiTreeFromBT=getAsciiTree(flatten(arr))
+        expect(asciiTreeFromBT).toBe(asciiTreeFromArr)
     })
 })
