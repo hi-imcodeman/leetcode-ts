@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Binary Tree Utils Get ASCII Tree 1`] = `
+"          ______3______ 
+         /             \\\\
+      __5__           __1__ 
+     /     \\\\         /     \\\\
+    6       2       0       8 
+           / \\\\                
+          7   4                 "
+`;
+
+exports[`Binary Tree Utils InOrder Traversal 1`] = `
+Array [
+  6,
+  4,
+  6,
+  2,
+  5,
+  1,
+  6,
+  3,
+  6,
+]
+`;
+
+exports[`Binary Tree Utils LevelOrder Insert and Traversal with null: BT 1`] = `
+TreeNode {
+  "left": null,
+  "right": TreeNode {
+    "left": TreeNode {
+      "left": null,
+      "right": null,
+      "val": 3,
+    },
+    "right": null,
+    "val": 2,
+  },
+  "val": 1,
+}
+`;
+
+exports[`Binary Tree Utils LevelOrder Insert and Traversal with null: levelOrderArr 1`] = `
+Array [
+  Array [
+    1,
+  ],
+  Array [
+    2,
+  ],
+  Array [
+    3,
+  ],
+]
+`;
+
+exports[`Binary Tree Utils LevelOrder Traversal 1`] = `
+Array [
+  Array [
+    1,
+  ],
+  Array [
+    2,
+    3,
+  ],
+  Array [
+    4,
+    5,
+    6,
+    6,
+  ],
+  Array [
+    6,
+    6,
+  ],
+]
+`;
+
+exports[`Binary Tree Utils PostOrder Traversal 1`] = `
+Array [
+  6,
+  6,
+  4,
+  5,
+  2,
+  6,
+  6,
+  3,
+  1,
+]
+`;
+
+exports[`Binary Tree Utils PreOrder Traversal 1`] = `
+Array [
+  1,
+  2,
+  4,
+  6,
+  6,
+  5,
+  3,
+  6,
+  6,
+]
+`;
+
+exports[`Binary Tree Utils Traversals with string: BT 1`] = `
+TreeNode {
+  "left": TreeNode {
+    "left": null,
+    "right": TreeNode {
+      "left": null,
+      "right": null,
+      "val": "e",
+    },
+    "val": "b",
+  },
+  "right": TreeNode {
+    "left": TreeNode {
+      "left": null,
+      "right": null,
+      "val": "f",
+    },
+    "right": null,
+    "val": "c",
+  },
+  "val": "a",
+}
+`;
+
+exports[`Binary Tree Utils Traversals with string: inOrder 1`] = `
+Array [
+  "b",
+  "e",
+  "a",
+  "f",
+  "c",
+]
+`;
+
+exports[`Binary Tree Utils Traversals with string: postOrder 1`] = `
+Array [
+  "e",
+  "b",
+  "f",
+  "c",
+  "a",
+]
+`;
+
+exports[`Binary Tree Utils Traversals with string: preOrder 1`] = `
+Array [
+  "a",
+  "b",
+  "e",
+  "c",
+  "f",
+]
+`;
+
+exports[`Binary Tree Utils insertLevelOrder 1`] = `
+TreeNode {
+  "left": TreeNode {
+    "left": TreeNode {
+      "left": TreeNode {
+        "left": null,
+        "right": null,
+        "val": 6,
+      },
+      "right": TreeNode {
+        "left": null,
+        "right": null,
+        "val": 6,
+      },
+      "val": 4,
+    },
+    "right": TreeNode {
+      "left": null,
+      "right": null,
+      "val": 5,
+    },
+    "val": 2,
+  },
+  "right": TreeNode {
+    "left": TreeNode {
+      "left": null,
+      "right": null,
+      "val": 6,
+    },
+    "right": TreeNode {
+      "left": null,
+      "right": null,
+      "val": 6,
+    },
+    "val": 3,
+  },
+  "val": 1,
+}
+`;

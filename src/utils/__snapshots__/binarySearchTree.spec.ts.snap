@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Binary Search Tree insertLevelOrderBST:number 1`] = `
+TreeNode {
+  "left": null,
+  "right": TreeNode {
+    "left": null,
+    "right": TreeNode {
+      "left": null,
+      "right": TreeNode {
+        "left": null,
+        "right": null,
+        "val": 4,
+      },
+      "val": 3,
+    },
+    "val": 2,
+  },
+  "val": 1,
+}
+`;
+
+exports[`Binary Search Tree insertLevelOrderBST:string 1`] = `
+TreeNode {
+  "left": TreeNode {
+    "left": null,
+    "right": null,
+    "val": "A",
+  },
+  "right": TreeNode {
+    "left": null,
+    "right": null,
+    "val": "c",
+  },
+  "val": "a",
+}
+`;
