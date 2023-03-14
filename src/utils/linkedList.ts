@@ -36,4 +36,3 @@ export const linkedListToArray = (listNode:ListNode|null) => {
     }
     return data
 }
-

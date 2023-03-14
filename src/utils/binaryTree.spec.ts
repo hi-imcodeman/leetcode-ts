@@ -58,7 +58,6 @@ describe('Binary Tree Utils', () => {
         const treeVals = [3,5,1,6,2,0,8,null,null,7,4]
         const asciiTreeFromArr= getAsciiTree(treeVals)
         const bt= insertLevelOrder(treeVals)
-        const arr=levelOrder(bt)
         const asciiTreeFromBT=getAsciiTreeFromBT(bt)
         expect(asciiTreeFromBT).toBe(asciiTreeFromArr)
     })
