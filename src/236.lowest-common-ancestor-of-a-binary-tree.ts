@@ -62,7 +62,7 @@
 import { TreeNode } from "./utils";
 
 // @lc code=start
-function lowestCommonAncestor<T>(root: TreeNode<T> | null, p: TreeNode<T> | null, q: TreeNode<T> | null): TreeNode<T> | null {    
+function lowestCommonAncestor(root: TreeNode | null, p: TreeNode | null, q: TreeNode | null): TreeNode | null {    
     if (root === null || root.val === p?.val || root.val === q?.val) {
         return root
     }
