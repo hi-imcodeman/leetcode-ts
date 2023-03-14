@@ -1,8 +1,8 @@
 import { TreeNode } from './binaryTree'
 
-export function insertLevelOrderBST(arr: number[]|string[]): TreeNode<number|string> | null {
-    let root:TreeNode<number|string>|null = null
-    const insert = (value:number|string,node:TreeNode<number|string>|null)=>{
+export function insertLevelOrderBST(arr: number[]|string[]): TreeNode | null {
+    let root:TreeNode|null = null
+    const insert = (value:number|string,node:TreeNode|null)=>{
         if(node === null)
             return new TreeNode(value)
         if(value < node.val){
